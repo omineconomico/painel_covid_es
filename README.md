@@ -1,5 +1,3 @@
-# painel_covid_es
-Analiando os dados presentes no Painel COVID-19 do Espírito Santo. Link para o painel: https://coronavirus.es.gov.br/painel-covid-19-es
 ### Dados Coronavírus Espirito Santo 
 
 library(ggplot2)
@@ -97,10 +95,10 @@ ggplot(sint.febre, aes(x = TeveFebre, y = Frequencia)) +
   theme(legend.position = "none") +
   xlab("") +
   ylab("Frequência") +
+  ylim(c(0,80000))+
   ggtitle("Coronavírus-ES: o caso confirmado apresentou febre?")+
-  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Data: 17/07/2020. Elaboração própria.")
+  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Elaboração por: @henriqvecast e @renanrotorres. Data: 17/07/2020.")
   
-
 
 # Tosse
 
@@ -122,8 +120,9 @@ ggplot(sint.tosse, aes(x = TeveTosse, y = FrequenciaTosse)) +
   theme(legend.position="none") +
   xlab("") +
   ylab("Frequência") +
+  ylim(c(0,80000))+
   ggtitle("Coronavírus-ES: o caso confirmado apresentou tosse?") +
-  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Data: 17/07/2020. Elaboração própria.")
+  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Elaboração por: @henriqvecast e @renanrotorres. Data: 17/07/2020.")
 
 
 # Dificuldade Respiratória
@@ -146,8 +145,9 @@ ggplot(dr, aes(x = TeveDR, y = FrequenciaDR)) +
   theme(legend.position="none") +
   xlab("") +
   ylab("Frequência") +
+  ylim(c(0,80000))+
   ggtitle("Coronavírus-ES: o caso confirmado apresentou dificuldade respiratória?") +
-  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Data: 17/07/2020. Elaboração própria.")
+  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Elaboração por: @henriqvecast e @renanrotorres. Data: 17/07/2020.")
 
 
 # Coriza
@@ -170,9 +170,9 @@ ggplot(sint.coriza, aes(x = TeveCori, y = FrequenciaCori)) +
   theme(legend.position = "none") +
   xlab("") +
   ylab("Frequência") +
+  ylim(c(0,80000))+
   ggtitle("Coronavírus-ES: o caso confirmado apresentou coriza?") +
-  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Data: 17/07/2020. Elaboração própria.")
-
+  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Elaboração por: @henriqvecast e @renanrotorres. Data: 17/07/2020.")
 
 
 # Dor de garganta
@@ -195,8 +195,9 @@ ggplot(sint.DG, aes(x = TeveDG, y = FrequenciaDG)) +
   theme(legend.position="none") +
   xlab("") +
   ylab("Frequência") +
+  ylim(c(0,80000))+
   ggtitle("Coronavírus-ES: o caso confirmado apresentou dor de garganta?")+
-  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Data: 17/07/2020. Elaboração própria.")
+  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Elaboração por: @henriqvecast e @renanrotorres. Data: 17/07/2020.")
 
 
 # Cefaleia 
@@ -219,8 +220,9 @@ ggplot(sint.DG, aes(x = TeveDG, y = FrequenciaDG)) +
     theme(legend.position="none") +
     xlab("") +
     ylab("Frequência") +
+    ylim(c(0,80000))+
     ggtitle("Coronavírus-ES: o caso confirmado apresentou cefaleia?")+
-    labs(caption = "Dados: Painel COVID-19, Espírito Santo. Data: 17/07/2020. Elaboração própria.")
+    labs(caption = "Dados: Painel COVID-19, Espírito Santo. Elaboração por: @henriqvecast e @renanrotorres. Data: 17/07/2020.")
   
 
 # Diarreia
@@ -243,5 +245,7 @@ ggplot(sint.diarreia, aes(x = TeveDiarreia, y = FrequenciaDiarreia)) +
   theme(legend.position="none") +
   xlab("") +
   ylab("Frequência") +
+  ylim(c(0,80000))+
   ggtitle("Coronavírus-ES: o caso confirmado apresentou diarreia?")+
-  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Data: 17/07/2020. Elaboração própria.")
+  labs(caption = "Dados: Painel COVID-19, Espírito Santo. Elaboração por: @henriqvecast e @renanrotorres. Data: 17/07/2020.")
+
